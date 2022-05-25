@@ -1,11 +1,11 @@
-import React from "react"
-import {render} from "@testing-library/dom"
-import "@testing-library/jest-dom/extend-expect"
+import React from "react";
+import { render } from "@testing-library/dom";
+import "@testing-library/jest-dom/extend-expect";
 
 // component
-import CardCountry from "./CardCountry"
+import CardCountry from "./CardCountry";
 
 test("<CardCountry /> Charge correctly Card", () => {
-  render(<CardCountry />)
-  expect(screen.getByText("Albania")).toBeInTheDocument()
-})
+  render(<CardCountry />);
+  expect(screen.getByText("Population:")).toBeInTheDocument();
+});
